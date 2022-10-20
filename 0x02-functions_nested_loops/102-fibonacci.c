@@ -7,6 +7,7 @@
 
 int main(void)
 {
+
 	unsigned long count, i, j, k;
 
 	i = 0;
@@ -23,9 +24,8 @@ int main(void)
 			putchar('\n');
 		else
 		{
-			printf(", ");
+			printf(",");
 		}
 	}
 	return (0);
 }
-

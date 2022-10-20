@@ -13,28 +13,26 @@ void times_table(void)
 
 	for (rone = 0; rone <= 9; rone++)
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-
-		for (cone = 1; cone <= 9; cone++)
+		for (cone = 0; cone <= 9; cone++)
 		{
 			d = (rone * cone);
-			if ((d / 10) > 0)
-			{
-				_putchar((d / 10) + '0');
-			}
-			else
-			{
-				_putchar((d / 10) + '0');
-			}
-			_putchar((d % 10) + '0');
-
-			if (cone < 9)
+			if (cone != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
+			if (d >= 10)
+			{
+				_putchar((d / 10) + '0');
+				_putchar((d % 10) + '0');
+			}
+			else if (d < 10 && cone != 0)
+			{
+			_putchar(' ');
+			_putchar((d % 10) + '0');
+			}
+			else
+				_putchar((d % 10) + '0');
 		}
 		_putchar('\n');
 	}

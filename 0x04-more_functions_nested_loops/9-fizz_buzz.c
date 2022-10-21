@@ -4,26 +4,26 @@
 /**
  * main - prints Fizz for multiple of 3 and Buzz for multiple of 5.
  *
- * Return: result
+ * Return: 0
  */
 
 int main(void)
 {
-	int i = 1;
+	int num;
 
-	while (i <= 100)
+	for (num = 1; num < 101; num++)
 	{
-		if (i % 15 == 0)
-			printf("FizzBuzz ");
-		else if (i % 3 == 0)
-			printf("Fizz ");
-		else if (i % 5 == 0)
-			printf("Buzz ");
+		if (num % 15 == 0)
+			printf("FizzBuzz");
+		else if (num % 3 == 0)
+			printf("Fizz");
+		else if (num % 5 == 0)
+			printf("Buzz");
 		else
-			printf("%d ", i);
-
-
-		i++;
+			printf("%d", num);
+		if (num != 100)
+			printf(" ");
 	}
 	printf("\n");
+	return (0);
 }

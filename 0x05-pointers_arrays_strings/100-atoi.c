@@ -3,12 +3,12 @@
 
 
 /**
- * _atio - converts a string to an integer
+ * _atoi - converts a string to an integer
  * @s: steing to convert
  * Return: value of integer
  */
 
-int _atio(char *s)
+int _atoi(char *s)
 {
 	int i, j, n, m;
 

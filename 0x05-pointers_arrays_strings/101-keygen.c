@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 
@@ -21,7 +21,7 @@ int main(void)
 
 	for (i = 0; sum <= 2644; i++)
 	{
-		randNum = (rand() % 25) + '65';
+		randNum = (rand() % 25) + 65;
 
 		str[i] = randNum;
 		sum += randNum;

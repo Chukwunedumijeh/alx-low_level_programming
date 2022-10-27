@@ -9,23 +9,16 @@
 
 char *_srtcat(char *dest, char *src)
 {
-	int str1;
-	int str2;
-	int i;
+	int i, n;
 
-	str1 = 0;
-	str2 = 0;
-
-	while (src[str1] != '\0')
-		str1++;
-
-	while (dest[str2] != '\0')
-		str2++;
-
-	for (i = 0; i <= str1; i++)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-		dest[str2] = src[i];
-		str2++;
+
+	}
+
+	for (n = 0; (dest[i + n] = *src++) != '\0'; i++)
+	{
+
 	}
 
 	return (dest);

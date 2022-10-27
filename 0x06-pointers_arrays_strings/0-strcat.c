@@ -9,17 +9,19 @@
 
 char *_srtcat(char *dest, char *src)
 {
-	int i, n;
+	char *s = dest;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	while (*dest != '\0')
 	{
-
+		dest++;
 	}
-
-	for (n = 0; (dest[i + n] = *src++) != '\0'; i++)
+	while (*src != '\0')
 	{
-
+		*dest = *src;
+		dest++;
+		src++;
 	}
+	*dest = '\0';
 
-	return (dest);
+	return (s);
 }

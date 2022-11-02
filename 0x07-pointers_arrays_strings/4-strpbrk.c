@@ -7,7 +7,7 @@
  * Return: Returns a pointer to the bytein s that matches one of the
  *	bytes in the accept, or NULL if no such byteis found
  */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int index, count;
 

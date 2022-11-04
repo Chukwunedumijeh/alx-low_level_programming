@@ -16,6 +16,7 @@ int _length(char *s)
 /**
  * checker - checks if string is palindrome
  * @lg: Length of the string
+ * @i: index
  * @s: The string
  * Return: 1 if palindrome or 0 if not
  */

@@ -10,7 +10,7 @@
 
 int my_sqrt_recursion(int a, int b)
 {
-	if (a == b (b * b))
+	if (a == (b * b))
 		return (b);
 	else if ((b * b) >= a)
 		return (-1);

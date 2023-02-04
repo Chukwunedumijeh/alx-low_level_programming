@@ -6,7 +6,7 @@
 #include <string.h>
 
 /**
- * strut hash_node_s - Node of a hash table
+ * struct hash_node_s - Node of a hash table
  * @key: The key string
  * The key is a unique in the HashTable
  * @value: The value corresponding to a key
@@ -25,8 +25,9 @@ typedef struct hash_node_s
  * @size: The size of an array
  * @array: An array of size @size
  * Each cell of this array is a pointer to the first node of a linked list,
- * because we want our HashTable to use a chaining colission handling
+ * because we want our HashTable to use a chaining collision handling
  */
+
 typedef struct hash_table_s
 {
 	unsigned long int size;
@@ -53,7 +54,7 @@ void hash_table_print(const hash_table_t *ht);
 void hash_table_delete(hash_table_t *ht);
 
 /**
- * struct shash-node_s - Node of a sorted hash table
+ * struct shash_node_s - Node of a sorted hash table
  * @key: The key string
  * The key is a unique in the HashTable
  * @value: The value corresponding to a key
